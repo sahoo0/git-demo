@@ -11,7 +11,7 @@ public class WelcomeRestController {
 	@GetMapping("/welcome")
 	public ResponseEntity<String> getWelcomeMsg(){
 		String msg = "Welcome to Java World";
-		return new ResponseEntity<>(msg + "In",HttpStatus.OK);
+		return new ResponseEntity<>(msg ,HttpStatus.OK);
 		
 	}
 
